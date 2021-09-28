@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  color: black;
+  margin-top: 36px;
+}
+
+section {
+  border:  1px solid black;
+  background-color:  lightgray;
+  margin: 10px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .col-lg-1 {
+    width: calc(33.33% - 20px);
+  }
+  .col-lg-2 {
+    width: calc(33.33% - 20px);
+  }
+  .col-lg-3 {
+    width: calc(33.33% - 20px);
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .col-md-1 {
+    width: calc(50% - 20px);
+  }
+  .col-md-2 {
+    width: calc(50% - 20px);
+  }
+  .col-md-3 {
+    width: calc(100% - 20px);
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-sm-1 {
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .col-sm-1 {
+    width: calc(100% - 20px);
+  }
+}
+
+
+#h2Chicken {
+  position: absolute;
+  top: -1px;
+  right:  -1px;
+  margin: 0px;
+  width: 180px;
+  background-color: lightpink;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#h2Beef {
+  position: absolute;
+  top: -1px;
+  right:  -1px;
+  margin: 0px;
+  padding-bottom: 6px;
+  width: 180px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#h2Sushi {
+  position: absolute;
+  top: -1px;
+  right:  -1px;
+  margin: 0px;
+  padding-bottom: 6px;
+  width: 180px;
+  background-color: lightyellow;
+  color:  black;
+  text-align: center;
+  border: 1px solid black;
+}
